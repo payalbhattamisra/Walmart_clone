@@ -13,31 +13,48 @@ const Header = () => {
             alt=""
           />
         </div>
-        <div className="department">
-        <i className="fa-solid fa-star"></i>
-        <p>Departments</p>
-        </div>
-        <div className="services">
-        <i className="fa-solid fa-star"></i>
-        <p>Services</p>
-        </div>
+
+        <button className="department">
+          <i className="fa-solid fa-star"></i>
+          <p>Departments</p>
+        </button>
+
+        <button className="services">
+          <i className="fa-solid fa-star"></i>
+          <p>Services</p>
+        </button>
+
         <div className="search">
-          <input type="text" />
-          <i className="fa-solid fa-magnifying-glass"></i>
+          <input
+            type="text"
+            placeholder="Search everything at Walmart onlina and in store"
+          />
+          <button>
+            <i className="fa-solid fa-magnifying-glass"></i>
+          </button>
         </div>
-        <div className="favitem">
-            <i className="fa-solid fa-heart"></i>
+
+        <button className="favitem">
+          <i className="fa-solid fa-heart"></i>
+          <div>
+            <p>Reorder</p>
             <p>My items</p>
-        </div>
-        <div className="account">
-            <i className="fa-solid fa-user"></i>
+          </div>
+        </button>
+
+        <button className="account">
+          <i className="fa-solid fa-user"></i>
+          <div>
+            <p>Sign in</p>
             <p>Account</p>
-        </div>
-        <div className="cart">
-            <p className="prioductnos"></p>
-        <i className="fa-solid fa-cart-shopping"></i>
-        <p className="tcost"></p>
-        </div>
+          </div>
+        </button>
+
+        <button className="cart">
+          <p className="prioductnos">0</p>
+          <i className="fa-solid fa-cart-shopping"></i>
+          <p className="tcost">$000</p>
+        </button>
       </div>
     </>
   );

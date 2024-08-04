@@ -2,12 +2,22 @@
     height:70px;
     background-color: #0071DC;
     display: flex;
+    justify-content: space-between;
     width: 100%;
     color: white;
     border-top: 1px solid white;
+    padding: 0px 20px;
 }
-.navbar>div{
+.navl, .navr{
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 20px;
+}
+
+.navl>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
