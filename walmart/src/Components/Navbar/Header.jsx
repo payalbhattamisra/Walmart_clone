@@ -15,12 +15,12 @@ const Header = () => {
         </div>
 
         <button className="department">
-          <i className="fa-solid fa-star"></i>
+        <i className="fa-solid fa-users"></i>
           <p>Departments</p>
         </button>
 
         <button className="services">
-          <i className="fa-solid fa-star"></i>
+        <i className="fa-solid fa-briefcase"></i>
           <p>Services</p>
         </button>
 

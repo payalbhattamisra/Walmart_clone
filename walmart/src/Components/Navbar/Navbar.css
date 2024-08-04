@@ -1,5 +1,5 @@
 .navbar{
-    height:70px;
+    height:55px;
     background-color: #0071DC;
     display: flex;
     justify-content: space-between;
@@ -14,10 +14,22 @@
     justify-content: center;
     gap: 20px;
 }
-
+.process>img{
+    height: 36px;
+}
+.process>button{
+    border: none;
+    background-color: transparent;
+    padding-top: 2px;
+    color: white;
+}
 .navl>div{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
+}
+.navr>a{
+    text-decoration: none;
+    color: white;
 }

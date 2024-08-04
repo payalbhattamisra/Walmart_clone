@@ -3,7 +3,6 @@ import "./Footer.css"
 const Footer=()=>{
    return(
     <>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"></link>
      <footer class="footer">
      <div class="container">
       <div class="row">

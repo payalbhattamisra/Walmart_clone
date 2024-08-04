@@ -11,6 +11,7 @@ const Navbar = () => {
           <div className="process">
             <img src="https://i5.walmartimages.com/dfw/4ff9c6c9-ad46/k2-_0a671c38-d307-447c-835e-7904ab143c26.v1.png" alt="" />
             <p>How do you want to your items ?</p>
+            <button><i className="fa-solid fa-chevron-down"></i></button>
           </div>
           <div className="location">
             <i className="fa-solid fa-location-dot"></i>
