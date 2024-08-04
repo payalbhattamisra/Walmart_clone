@@ -1,17 +1,106 @@
-.header{
-    height:105px;
+.header {
+    height: 86px;
     background-color: #0071DC;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     color: white;
-    padding: 20px;
+    padding: 17px;
 }
-.header>div{
+.logo{
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 10px;
 }
-.logo{
+.logo>img {
+    height: 35px;
 }
+i{
+    font-size: 18px;
+    min-width: 20px;
+}
+
+.department, .services{
+    display: flex;
+    background-color: transparent;
+    border: none;
+    color: white;
+    gap: 8px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 7px;
+    border-radius: 50px;
+}
+.search>input{
+    background-color: white;
+    width: 75vh;
+    height: 29px;
+    border: none;
+    font-size: 16px;
+    margin-left: 10px;
+}
+.search>button{
+    height: 34px;
+    min-width: 34px;
+    background-color: #004F9A;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 15px;
+    align-items: center;
+    padding-top: 3px;
+}
+
+.favitem, .account{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: white;
+
+    border: none;
+    gap: 10px;
+    font-weight: 600;
+}
+
+.favitem>div>p:nth-child(1),.account>div>p:nth-child(1){
+    font-size: 13px;
+    font-weight: 300;
+    text-align: left;
+}
+
+.cart{
+    position: relative;
+    height: 50px;
+    width: 40px;
+    font-weight: 600;
+    color: white;
+    background-color: transparent;
+    border: none;
+}
+
+.prioductnos{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 11px;
+    height: 15px;
+    width: 15px;
+    background-color: #FFC220;
+    border: 0.5px solid red;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
