@@ -1,60 +1,89 @@
-import React from "react"
-import "./Footer.css"
-const Footer=()=>{
-   return(
+import { NavLink } from "react-router-dom";
+import "./Footer.css";
+const Footer = () => {
+  return (
     <>
-     <footer class="footer">
-     <div class="container">
-      <div class="row">
-        <div class="footer-col">
-          <h4>All Departments</h4>
-          <ul>
-            <li><a href="#">about us</a></li>
-            <li><a href="#">our services</a></li>
-            <li><a href="#">privacy policy</a></li>
-            <li><a href="#">affiliate program</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>get help</h4>
-          <ul>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">shipping</a></li>
-            <li><a href="#">returns</a></li>
-            <li><a href="#">order status</a></li>
-            <li><a href="#">payment options</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>online shop</h4>
-          <ul>
-            <li><a href="#">watch</a></li>
-            <li><a href="#">bag</a></li>
-            <li><a href="#">shoes</a></li>
-            <li><a href="#">dress</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>follow us</h4>
-          <div class="social-links">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      <footer className="footer">
+        <div className="container">
+          <div className="row">
+            <div className="footer-col">
+              <h4>All Departments</h4>
+              <ul>
+                <li>
+                  <NavLink to="/">about us</NavLink>
+                </li>
+                <li>
+                  <NavLink to="/">our services</NavLink>
+                </li>
+                <li>
+                  <NavLink to="/">privacy policy</NavLink>
+                </li>
+                <li>
+                  <NavLink to="/">affiliate program</NavLink>
+                </li>
+              </ul>
+            </div>
+            <div className="footer-col">
+              <h4>get help</h4>
+              <ul>
+                <li>
+                  <NavLink to="/">FAQ</NavLink>
+                </li>
+                <li>
+                  <NavLink to="/">shipping</NavLink>
+                </li>
+                <li>
+                  <NavLink to="/">returns</NavLink>
+                </li>
+                <li>
+                  <NavLink to="/">order status</NavLink>
+                </li>
+                <li>
+                  <NavLink to="/">payment options</NavLink>
+                </li>
+              </ul>
+            </div>
+            <div className="footer-col">
+              <h4>online shop</h4>
+              <ul>
+                <li>
+                  <NavLink to="/">watch</NavLink>
+                </li>
+                <li>
+                  <NavLink to="/">bag</NavLink>
+                </li>
+                <li>
+                  <NavLink to="/">shoes</NavLink>
+                </li>
+                <li>
+                  <NavLink to="/">dress</NavLink>
+                </li>
+              </ul>
+            </div>
+            <div className="footer-col">
+              <h4>follow us</h4>
+              <div className="social-links">
+                <NavLink to="/">
+                  <i className="fab fa-facebook-f"></i>
+                </NavLink>
+                <NavLink to="/">
+                  <i className="fab fa-twitter"></i>
+                </NavLink>
+                <NavLink to="/">
+                  <i className="fab fa-instagram"></i>
+                </NavLink>
+                <NavLink to="/">
+                  <i className="fab fa-linkedin-in"></i>
+                </NavLink>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-     </div>
-     <div className="reserved"> 
-     <p>@2024 Walmart.All right Reserved</p>
-     </div>
-  </footer>
-
+        <div className="reserved">
+          <p>@2024 Walmart.All right Reserved</p>
+        </div>
+      </footer>
     </>
-   )
-}
-export default Footer
- 
- 
- 
- 
+  );
+};
+export default Footer;
