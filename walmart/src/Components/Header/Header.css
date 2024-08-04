@@ -1,0 +1,17 @@
+.header{
+    height:105px;
+    background-color: #0071DC;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color: white;
+    padding: 20px;
+}
+.header>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo{
+}
