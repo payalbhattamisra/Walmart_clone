@@ -1,4 +1,4 @@
-.parent {
+.hompparent {
     display: grid;
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: repeat(12, 1fr);
@@ -8,115 +8,115 @@
     padding: 30px;
 }
 
-.parent>div {
+.hompparent>div {
     position: relative;
     border-radius: 10px;
 }
 
-.div1 {
+.hompdiv1 {
     padding: 10px;
     overflow-y: hidden;
     background-color: #E6CFA7;
     grid-area: 1 / 1 / 5 / 3;
 }
-.div1>h2{
+.hompdiv1>h2{
     width: 200px;
     font-size: 20px;
 }
-.div1>img{
+.hompdiv1>img{
     height: 250px;
     position: absolute;
     bottom: -50px;
     right: 0px;
 }
 
-.div2 {
+.hompdiv2 {
     overflow-y: hidden;
     grid-area: 5 / 1 / 10 / 3;
     background-color: rgb(217, 228, 245);
     padding: 10px;
 }
-.div2>img{
+.hompdiv2>img{
     position: absolute;
     height: 300px;
     right: 10px;
     bottom: 0px;
 }
-.div2>h2{
+.hompdiv2>h2{
     font-size: 20px;
     width: 200px;
     margin-bottom: 30px;
 }
 
-.div3 {
+.hompdiv3 {
     grid-area: 10 / 1 / 13 / 3;
     background-color: rgb(149, 187, 249);
     padding: 10px;
 }
-.div3>img{
+.hompdiv3>img{
     position: absolute;
     height: 150px;
     right: 10px;
     bottom: 0px;
 }
-.div3>h2{
+.hompdiv3>h2{
     font-size: 20px;
     width: 200px;
     margin-bottom: 20px;
 }
 
-.div4 {
+.hompdiv4 {
     grid-area: 1 / 3 / 6 / 8;
     background-color: rgb(179, 206, 254);
     overflow-y: hidden;
     padding: 30px;
 }
-.div4>h1{
+.hompdiv4>h1{
     font-size: 50px;
 }
-.div4>h2{
+.hompdiv4>h2{
     font-size: 30px;
 }
-.div4>img:nth-child(5){
+.hompdiv4>img:nth-child(5){
     position: absolute;
     height: 400px;
     right: 10px;
     bottom: -20px;
 }
-.div4>img:nth-child(4){
+.hompdiv4>img:nth-child(4){
     height: 120px;
     margin-left: -125px;
     margin-bottom: 40px;
 }
-.div4>h2{
+.hompdiv4>h2{
     margin-bottom: 20px;
 }
-.div4>button{
+.hompdiv4>button{
     border: 0.1px solid black;
     padding: 13px 23px;
     border-radius: 50px;
 }
-.div4>button:hover{
+.hompdiv4>button:hover{
     background-color: #ffffff79;
 }
-.div5 {
+.hompdiv5 {
     grid-area: 6 / 3 / 10 / 8;
     display: flex;
     gap: 30px;
     justify-content: space-between;
 }
-.div51{
+.hompdiv51{
     overflow-y: hidden;
     border-radius: 10px;
     position: relative;
     width: 400px;
     padding: 20px;
 }
-.div51>h2{
+.hompdiv51>h2{
     font-size: 35px;
     margin-bottom: 20px;
 }
-.div51>img{
+.hompdiv51>img{
     position: absolute;
     width: 385px;
     left: 0px;
@@ -124,32 +124,32 @@
     z-index: -1;
 }
 
-.div52{
+.hompdiv52{
     background-color: rgb(253,231,127);
     width: 400px;
     border-radius: 10px;
     position: relative;
     padding: 20px;
 }
-.div52>img{
+.hompdiv52>img{
     position: absolute;
     width: 250px;
     right: 0px;
     bottom: 0px;
 }
-.div52>h2{
+.hompdiv52>h2{
     font-size: 20px;
     margin-bottom: 80px;;
 }
-.div6 {
+.hompdiv6 {
     grid-area: 10 / 3 / 13 / 8;
     background-color: rgb(255, 194, 31);
     padding: 20px;
 }
-.div6>p{
+.hompdiv6>p{
     margin-bottom: 50px;
 }
-.div6>img{
+.hompdiv6>img{
     position: absolute;
     background-color: #E6CFA7;
     right: 0;
@@ -158,33 +158,33 @@
     border-top-left-radius: 150px;
 }
 
-.div7 {
+.hompdiv7 {
     grid-area: 1 / 8 / 5 / 10;
     background-color: rgb(231, 237, 246);
     padding: 20px;
 }
-.div7>img{
+.hompdiv7>img{
     position: absolute;
     right: 0;
     left: 0;
     bottom: 0;
 }
 
-.div8 {
+.hompdiv8 {
     grid-area: 5 / 8 / 9 / 10;
     background-color: rgb(254, 234, 191);
     overflow-y: hidden;
     padding: 20px;
 }
-.div8>img{
+.hompdiv8>img{
     position: absolute;
 }
 
-.div9 {
+.hompdiv9 {
     grid-area: 9 / 8 / 13 / 10;
     background-color: rgb(165, 203, 238);
 }
-.div9>img{
+.hompdiv9>img{
     position: absolute;
     top: 0;
     bottom: 0;

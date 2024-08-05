@@ -45,6 +45,8 @@ i{
     width: 75vh;
     height: 29px;
     border: none;
+    outline: none;
+
     font-size: 16px;
     margin-left: 10px;
 }
