@@ -5,6 +5,7 @@ import Footer from './Components/Footer/Footer'
 import Header from './Components/Navbar/Header.jsx'
 import Navbar from './Components/Navbar/Navbar.jsx'
 import Homepage from './Components/Pages/Homepage.jsx'
+import Homepage2 from './Components/Pages/Homepage2.jsx'
 
 function App() {
    
@@ -14,6 +15,7 @@ function App() {
       <Header/>
       <Navbar/>
       <Homepage/>
+      <Homepage2/>
       <Feedbackk/>
       <Footer/>
     </>

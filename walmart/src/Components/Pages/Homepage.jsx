@@ -5,10 +5,8 @@ import { NavLink } from "react-router-dom";
 const Homepage = () => {
   return (
     <>
-    
-
-      <div className="parent">
-        <div className="div1">
+      <div className="hompparent">
+        <div className="hompdiv1">
           <h2>Floor care for so much less</h2>
           <NavLink to="/deals">Shop now</NavLink>
           <img
@@ -16,7 +14,7 @@ const Homepage = () => {
             alt=""
           />
         </div>
-        <div className="div2">
+        <div className="hompdiv2">
           <h2>Top styles-low,low Prices</h2>
           <h2>$45</h2>
           <NavLink to="/deals">Shop now</NavLink>
@@ -25,7 +23,7 @@ const Homepage = () => {
             alt=""
           />
         </div>
-        <div className="div3">
+        <div className="hompdiv3">
           <h2>Let's play under $25</h2>
           <NavLink to="/deals">Shop now</NavLink>
           <img
@@ -33,7 +31,7 @@ const Homepage = () => {
             alt=""
           />
         </div>
-        <div className="div4">
+        <div className="hompdiv4">
           <h1>Springs</h1>
           <h2>Saving</h2>
           <button>Shop all</button>
@@ -46,8 +44,8 @@ const Homepage = () => {
             alt=""
           />
         </div>
-        <div className="div5">
-          <div className="div51">
+        <div className="hompdiv5">
+          <div className="hompdiv51">
               <h2>Budget friendly furniture</h2>
               <NavLink to="/deals">Shop now</NavLink>
             <img
@@ -55,7 +53,7 @@ const Homepage = () => {
               alt=""
             />
           </div>
-          <div className="div52">
+          <div className="hompdiv52">
             <h2>Up to 40% off</h2>
             <NavLink to="/deals">Shop now</NavLink>
             <img
@@ -64,7 +62,7 @@ const Homepage = () => {
             />
           </div>
         </div>
-        <div className="div6">
+        <div className="hompdiv6">
           <h2>Enjoy Free Same-day delivery low prices !</h2>
           <p>Apply tearm</p>
           <NavLink to="/deals">Join walmart+</NavLink>
@@ -73,7 +71,7 @@ const Homepage = () => {
             alt=""
           />
         </div>
-        <div className="div7">
+        <div className="hompdiv7">
           <h2>Save on personal care</h2>
           <NavLink to="/deals">Shop now</NavLink>
           <img
@@ -81,7 +79,7 @@ const Homepage = () => {
             alt=""
           />
         </div>
-        <div className="div8">
+        <div className="hompdiv8">
           <h2>Apple savings up to $150 off</h2>
           <NavLink to="/deals">Shop now</NavLink>
           <img
@@ -89,7 +87,7 @@ const Homepage = () => {
             alt=""
           />
         </div>
-        <div className="div9">
+        <div className="hompdiv9">
           <img
             src="https://github.com/B2Kumar03/homepageImage/blob/main/wholeContent.png?raw=true"
             alt=""
