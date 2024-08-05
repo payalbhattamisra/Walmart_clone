@@ -15,6 +15,9 @@ const Header = () => {
     if (searchTerm.toLowerCase() === "sofa") {
       navigate("/product");
     }
+    if(searchTerm.toLowerCase()==="chair"){
+      navigate("/chair")
+    }
   };
 
   return (
