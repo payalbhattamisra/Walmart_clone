@@ -18,6 +18,9 @@ const Header = () => {
     if(searchTerm.toLowerCase()==="chair"){
       navigate("/chair")
     }
+    if(searchTerm.toLowerCase()==="bed"){
+      navigate("/Bed")
+    }
   };
 
   return (
@@ -49,7 +52,7 @@ const Header = () => {
             value={searchTerm}
             onChange={handleSearch}
           />
-          <button type="submit">
+          <button  className="submitbtn"type="submit">
             <i className="fa-solid fa-magnifying-glass"></i>
           </button>
         </form>

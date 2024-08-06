@@ -5,7 +5,7 @@ import App from './App.jsx'
 import './index.css'
 import Product from './Components/Product/Product.jsx';
 import Chair from './Components/Chair/Chair.jsx';
-
+import Bed from './Components/Bed/Bed.jsx';
 const router = createBrowserRouter([
   {
         path: "/",
@@ -18,6 +18,10 @@ const router = createBrowserRouter([
   {
        path:"/chair",
        element:<Chair/>
+  },
+  {
+        path:"/Bed",
+        element:<Bed/>
   }
 ]);
 
