@@ -1,5 +1,5 @@
 .navbar{
-    height:55px;
+    height:46px;
     background-color: #0071DC;
     display: flex;
     justify-content: space-between;
@@ -7,6 +7,9 @@
     color: white;
     border-top: 1px solid white;
     padding: 0px 20px;
+    font-size: 13px;
+    font-weight: 400;
+
 }
 .navl, .navr{
     display: flex;
@@ -14,8 +17,14 @@
     justify-content: center;
     gap: 20px;
 }
+.process{
+    white-space: nowrap;
+}
+.process>p{
+    font-weight: 500;
+}
 .process>img{
-    height: 36px;
+    height: 30px;
 }
 .process>button{
     border: none;
@@ -28,8 +37,40 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
+    white-space: nowrap;
+
 }
 .navr>a{
     text-decoration: none;
     color: white;
+    white-space: nowrap;
+}
+
+@media (max-width: 1200px){
+    .navr>a:nth-child(5){
+        display: none;
+    }
+}
+@media (max-width: 1130px){
+    .navr>a:nth-child(4){
+        display: none;
+    }
+}
+@media (max-width: 1000px){
+    .navr>a{
+        display: none;
+    }
+}
+
+
+@media (max-width: 730px) {
+    .navbar {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .navl>.location,.navl>.home{
+        display: none;
+    }
+
+    
 }

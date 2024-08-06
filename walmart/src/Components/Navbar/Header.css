@@ -8,14 +8,21 @@
     color: white;
     padding: 17px;
 }
+.hmenubtn{
+    display: none;
+}
 .logo{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
+    min-width: 155px;
 }
 .logo>img {
     height: 35px;
+}
+.logo2{
+    display: none;
 }
 i{
     font-size: 18px;
@@ -25,11 +32,16 @@ i{
 .department, .services{
     display: flex;
     background-color: transparent;
+    justify-content: center;
     border: none;
     color: white;
     gap: 8px;
     font-size: 17px;
     font-weight: 500;
+    min-width: 150px;
+}
+.services{
+    min-width: 120px;
 }
 
 .search{
@@ -46,7 +58,6 @@ i{
     height: 29px;
     border: none;
     outline: none;
-
     font-size: 16px;
     margin-left: 10px;
 }
@@ -68,7 +79,7 @@ i{
     justify-content: center;
     background-color: transparent;
     color: white;
-
+    min-width: 105px;
     border: none;
     gap: 10px;
     font-weight: 600;
@@ -83,7 +94,7 @@ i{
 .cart{
     position: relative;
     height: 50px;
-    width: 40px;
+    min-width: 40px;
     font-weight: 600;
     color: white;
     background-color: transparent;
@@ -104,5 +115,52 @@ i{
     align-items: center;
     justify-content: center;
     color: black;
+}
+@media (max-width: 1000px) {
+    .header{
+        height: 75px;
+        overflow-y: hidden;
+    }
+    .logo, .favitem,.account,.department,.services{
+        display: none;
+    }
+    .logo2{
+        display: flex;    
+        min-width: 45px;
+    }
+    .logo2>img {
+        height: 35px;
+    }
+    .hmenubtn{
+        display: flex;
+        background-color: transparent;
+        border: none;
+        color: white;
+        min-width: 35px;
+    }
+    .hmenubtn>i{
+        font-size: 24px;
+    }
+    .search{
+        padding: 3px;
+        border-radius: 50px;
+    }
+    .search>input{
+        width: 80vh;
+        height: 20px;
+        min-width: 40px;
+    }
+    .cart{
+        margin-left: 15px;
+    }
+}
+
+@media (max-width: 460px) {
+    .search>input{
+        width: 18vh;
+    }
+    .cart{
+        margin-left: 10px;
+    }
 }
 

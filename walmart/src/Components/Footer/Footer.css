@@ -20,7 +20,7 @@ ul{
   list-style: none;
 }
 .footer{
-  background-color: rgb(0, 79, 154);  ;
+  background-color: #0071DC;  ;
     padding: 50px 0;
 }
 .footer-col{
@@ -74,6 +74,7 @@ ul{
   border-radius: 50%;
   color: #ffffff;
   transition: all 0.5s ease;
+  padding-top: 5px;
 }
 .footer-col .social-links a:hover{
   color: #24262b;
@@ -83,6 +84,7 @@ ul{
     padding-top: 30px;
     align-items: center;
     text-align: center;
+    color: aliceblue;
 }
 
 /*responsive*/
