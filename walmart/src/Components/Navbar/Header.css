@@ -157,7 +157,7 @@ i{
 
 @media (max-width: 460px) {
     .search>input{
-        width: 18vh;
+        width: 25vh;
     }
     .cart{
         margin-left: 10px;
