@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Header.css";
 
@@ -26,8 +26,16 @@ const Header = () => {
   return (
     <>
       <div className="header">
+        <button className="hmenubtn"><i className="fa-solid fa-bars"></i></button>
         <div className="logo">
           <h2>Walmart</h2>
+          <img
+            className="logoimg"
+            src="https://i5.walmartimages.com/dfw/4ff9c6c9-d10e/k2-_ef2c8660-96ed-4f64-891d-329fa488c482.v1.png"
+            alt="Walmart Logo"
+          />
+        </div>
+        <div className="logo2">
           <img
             className="logoimg"
             src="https://i5.walmartimages.com/dfw/4ff9c6c9-d10e/k2-_ef2c8660-96ed-4f64-891d-329fa488c482.v1.png"
@@ -48,7 +56,7 @@ const Header = () => {
         <form className="search" onSubmit={handleSubmit}>
           <input
             type="text"
-            placeholder="Search everything at Walmart online and in store"
+            placeholder="Search at Walmart"
             value={searchTerm}
             onChange={handleSearch}
           />

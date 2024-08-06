@@ -1,5 +1,5 @@
 .navbar{
-    height:55px;
+    height:46px;
     background-color: #0071DC;
     display: flex;
     justify-content: space-between;
@@ -7,6 +7,9 @@
     color: white;
     border-top: 1px solid white;
     padding: 0px 20px;
+    font-size: 13px;
+    font-weight: 400;
+
 }
 .navl, .navr{
     display: flex;
@@ -14,8 +17,14 @@
     justify-content: center;
     gap: 20px;
 }
+.process{
+    white-space: nowrap;
+}
+.process>p{
+    font-weight: 500;
+}
 .process>img{
-    height: 36px;
+    height: 30px;
 }
 .process>button{
     border: none;
@@ -28,61 +37,40 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
+    white-space: nowrap;
+
 }
 .navr>a{
     text-decoration: none;
     color: white;
+    white-space: nowrap;
 }
-@media (max-width: 768px) {
-    .navbar {
-        flex-wrap: wrap;
-        padding: 10px;
-        height: auto;
-    }
 
-    .navl, .navr {
-        flex: 1 1 100%;
-        justify-content: center;
-        gap: 10px;
-        flex-wrap: wrap;
-        margin-bottom: 10px;
+@media (max-width: 1200px){
+    .navr>a:nth-child(5){
+        display: none;
     }
-
-    .process > img {
-        height: 30px;
+}
+@media (max-width: 1130px){
+    .navr>a:nth-child(4){
+        display: none;
     }
-
-    .navr > a {
-        font-size: 14px;
+}
+@media (max-width: 1000px){
+    .navr>a{
+        display: none;
     }
 }
 
-@media (max-width: 480px) {
+
+@media (max-width: 730px) {
     .navbar {
-        padding: 5px;
-        height:50px;
-        display: flex;
         flex-direction: column;
         justify-content: center;
     }
-    .navl>.location,.navl>.home,.navr{
+    .navl>.location,.navl>.home{
         display: none;
     }
 
-    .navl, .navr {
-        flex-direction: column;
-        gap: 5px;
-    }
-
-    .navl > div, .navr > a {
-        font-size: 12px;
-    }
-
-    .process > img {
-        height: 25px;
-    }
-
-    .process > p {
-        font-size: 14px;
-    }
+    
 }

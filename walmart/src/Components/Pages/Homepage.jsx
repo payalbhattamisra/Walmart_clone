@@ -1,4 +1,3 @@
-import React from "react";
 import "./Homepage.css";
 import { NavLink } from "react-router-dom";
 
@@ -24,7 +23,7 @@ const Homepage = () => {
           />
         </div>
         <div className="hompdiv3">
-          <h2>Let's play under $25</h2>
+          <h2>Let&apos;s play under $25</h2>
           <NavLink to="/deals">Shop now</NavLink>
           <img
             src="https://github.com/B2Kumar03/homepageImage/blob/main/toys-removebg-preview.png?raw=true"
