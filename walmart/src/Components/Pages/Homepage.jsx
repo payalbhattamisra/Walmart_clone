@@ -15,7 +15,7 @@ const Homepage = () => {
           />
         </div>
         <div className="hompdiv2">
-          <h2>Top styles-low,low Prices</h2>
+          <h2>Top styles,low Prices</h2>
           <h2>$45</h2>
           <NavLink to="/deals">Shop now</NavLink>
           <img

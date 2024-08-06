@@ -33,3 +33,56 @@
     text-decoration: none;
     color: white;
 }
+@media (max-width: 768px) {
+    .navbar {
+        flex-wrap: wrap;
+        padding: 10px;
+        height: auto;
+    }
+
+    .navl, .navr {
+        flex: 1 1 100%;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+    }
+
+    .process > img {
+        height: 30px;
+    }
+
+    .navr > a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 5px;
+        height:50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .navl>.location,.navl>.home,.navr{
+        display: none;
+    }
+
+    .navl, .navr {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .navl > div, .navr > a {
+        font-size: 12px;
+    }
+
+    .process > img {
+        height: 25px;
+    }
+
+    .process > p {
+        font-size: 14px;
+    }
+}
