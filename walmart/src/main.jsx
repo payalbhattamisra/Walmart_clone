@@ -6,6 +6,7 @@ import './index.css'
 import Product from './Components/Product/Product.jsx';
 import Chair from './Components/Chair/Chair.jsx';
 import Bed from './Components/Bed/Bed.jsx';
+import Sofadisplay from './Components/Displaypage/Sofadisplay.jsx'
 const router = createBrowserRouter([
   {
         path: "/",
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
   {
         path:"/Bed",
         element:<Bed/>
+  },
+  {
+    path:"/Sofadisplay",
+    element:<Sofadisplay/>
   }
 ]);
 

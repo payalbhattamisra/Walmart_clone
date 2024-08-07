@@ -1,0 +1,181 @@
+.sdisplay{
+    display: flex;
+    padding: 20px;
+    gap: 30px;
+}
+.pics{
+    display: flex;
+    flex-direction: column;
+    width: 13%;
+    gap: 20px;
+}
+.pics>img{
+    border-radius: 5px;
+}
+.dleft{
+    width: 60%;
+    height: 653px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow-y: hidden;
+    padding: 10px;
+}
+.mainimg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 87%;
+    position: relative;
+    padding: 0px 80px;
+}
+.mainimg>button{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid rgba(0, 0, 0, 0.119);
+    background-color: transparent;
+    color: rgb(183, 183, 183);
+    
+}
+.mainimg>button:nth-child(2){
+    right: 10px;
+    top: 5px;
+}
+.mainimg>button:nth-child(3){
+    right: 10px;
+    top: 50px;
+}
+.mainimg>button:nth-child(4){
+    left: 20px;
+}
+.mainimg>button:nth-child(5){
+    right: 20px;
+    
+}
+.dright{
+    width: 40%;
+}
+.dright>p:nth-child(1){
+    font-size: 11px;
+    font-weight: 600;
+    background-color: #E6F1FC;
+    width: 70px;
+    color: #0073C3;
+    text-align: center;
+    border-radius: 6px;
+    margin-bottom: 5px;
+}
+.dright>h2:nth-child(3){
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 95%;
+
+}
+
+.dright>p:nth-child(4){
+margin-bottom: 10px;    
+}
+.dright>p:nth-child(4)>a{
+    font-size: 13px;
+    
+}
+.dright>h2:nth-child(5){
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: green;
+}
+.dright>h3:nth-child(6){
+    font-weight: 500;
+    font-size: 13px;
+}
+.dright>h3:nth-child(6)>a{
+    font-weight: 300;
+    font-size: 13px;
+}
+.dright>h3:nth-child(6)>span{
+    font-weight: 300;
+    font-size: 13px;
+}
+.dright>p:nth-child(7){
+    font-weight: 500;
+    font-size: 13px;
+    margin-bottom: 30px;
+}
+.dright>p:nth-child(7)>button{
+    padding: 1px 7px;
+    border-radius: 20px;
+    background-color: transparent;
+}
+.addbtn>button:nth-child(1){
+    padding: 15px 30px;
+    border-radius: 26px;
+    background-color: #0073C3;
+    color: white;
+    border: none;
+}
+.addbtn>button:nth-child(2){
+    padding: 15px 38px;
+    border-radius: 26px;    
+    background-color: #0073C3;
+    color: white;
+    border: none;
+    margin-left: 20px;
+}
+.addbtn{
+    margin-bottom: 40px;
+}
+.cbtns{
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    justify-content: space-around;
+}
+.colors{
+    background-color: rgb(243, 243, 243);
+    width: 100%;
+}
+.colors{
+    font-size: 15px;
+    font-weight: 600;
+}
+.cbtn>button>div{
+    margin: 3px;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+}
+.cbtn>button{
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    border: 3px solid rgb(159, 158, 158);
+    overflow-y: hidden;
+}
+.cbtn:nth-child(1)>button>div{
+    background-color: #10458C;
+}
+.cbtn:nth-child(2)>button>div{
+    background-color: rgb(215,174,131);
+}
+.cbtn:nth-child(3)>button>div{
+    
+    background-color: rgb(104,106,119);
+}
+.cbtn:nth-child(3)>button{
+    border: 3px solid rgb(65, 65, 65);
+
+}
+.cbtn:nth-child(4)>button>div{
+    background-color: rgb(170,167,156);
+}
+.cbtn:nth-child(5)>button>div{
+    
+}

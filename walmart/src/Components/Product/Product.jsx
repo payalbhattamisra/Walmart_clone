@@ -2,12 +2,12 @@ import React from 'react';
 import Navbar from '../Navbar/Navbar';
 import Header from '../Navbar/Header';
 import './Product.css';
-import { NavLink } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+
 
 const products = [
   { id: 1, name: "Homall Convertible Sectional Sofa Couch, Modern Linen Fabric L-Shaped Couch 3-Seat Sofa.", image: "https://i5.walmartimages.com/seo/Homall-Convertible-Sectional-Sofa-Couch-Modern-Linen-Fabric-L-Shaped-Couch-3-Seat-Reversible-Chaise-Small-Living-Room-Apartment-Space-Dark-Gray_580e12a9-825b-4586-87df-e275ea527e67.78b035bcf5754d1e6b0f1aa872ff576a.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF", price: "$499.99", reviews: "⭐⭐⭐⭐☆ (4.5)" },
   { id: 2, name: "JUSTLET Sectional Sofa with Ottoman, Small L Shaped Free Combination Furniture Sets.", image: "https://i5.walmartimages.com/seo/JUSTLET-Sectional-Sofa-with-Ottoman-Small-L-Shaped-Free-Combination-Corduroy-Couch-Furniture-Sets-for-Living-Room-Beige_3520e8a8-dc82-4ff2-bf5c-1b5eb0acd6a2.d68b1659f9ea323f4f24a11835b14be1.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF", price: "$399.99", reviews: "⭐⭐⭐⭐☆ (4.0)" },
-  // Add more products as needed
   { id: 3, name: "Zinus 76 Harmony Indoor Fabric Sofa, Dark Gray.", image: "https://i5.walmartimages.com/seo/Zinus-Harmony-Indoor-Fabric-Sofa-Dark-Gray_6e34aeaa-bb0e-41cc-84aa-d9c11458daca.8d83b4f1c97d5d919f3f5bb36b88fdbc.jpeg?odnHeight=640&odnWidth=640&odnBg=FFFFFF", price: "$299.99", reviews: "⭐⭐⭐⭐☆ (4.8)" },
   { id: 4, name: "DHP Cooper Reversible Sectional Sofa.", image: "https://i5.walmartimages.com/seo/DHP-Cooper-Reversible-Sectional-Sofa-Green-Velvet_1c79856c-bed4-47a0-81e3-d2b70f9d9ccb.83afe1787bef53e1abf7053037c667b2.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF", price: "$199.99", reviews: "⭐⭐⭐⭐☆ (4.2)" },
   { id: 5, name: "COMHOMA Convertible Futon Sofa Bed Upholstered Futon Couch Fabric Sleeper Sofa, Gray.", image: "https://i5.walmartimages.com/seo/COMHOMA-Convertible-Futon-Sofa-Bed-Upholstered-Futon-Couch-Fabric-Sleeper-Sofa-Gray_492b9567-40b6-4f98-8dfe-222ad8667e49.260426d1d61d2db517a2eb335f716bfb.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF", price: "$599.99", reviews: "⭐⭐⭐⭐☆ (4.6)" },
@@ -18,7 +18,9 @@ const products = [
   { id: 10, name: "Ktaxon Sectional Sofa Set, 110 U-Shaped Chenille Couch, 4 Seat Lounge Sleeper with Double Chaise for Living Room Beige.", image: "https://i5.walmartimages.com/seo/Ktaxon-Sectional-Sofa-Set-110-U-Shaped-Chenille-Couch-4-Seat-Lounge-Sleeper-with-Double-Chaise-for-Living-Room-Beige_1da7d01e-ec18-4684-8956-6190786814dd.649a01a05da4fa9cae0367a2af157391.jpeg?odnHeight=640&odnWidth=640&odnBg=FFFFFF", price: "$599.99", reviews: "⭐⭐⭐⭐☆ (4.6)" }
 ];
 
+
 function Product() {
+  const navigate = useNavigate();
   return (
     <>
       <div className="product">
@@ -40,7 +42,17 @@ function Product() {
                 <div className="price-section">
                   <h2>{product.price}</h2>
                 </div>
-                <button className="buy-button">Buy Now</button>
+                <button className="buy-button"
+                onClick={()=>{
+                  if (product.id===1){
+                    navigate("/Sofadisplay")
+                  }
+                }}
+
+                // onClick={() => {
+                //   navigate(`/Sofadisplay/${product.id}`); // navigate to a route with the product ID
+                // }}
+                >Buy Now</button>
                 <div className="reviews">
                   <span>{product.reviews}</span>
                 </div>
