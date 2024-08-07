@@ -177,5 +177,6 @@ margin-bottom: 10px;
     background-color: rgb(170,167,156);
 }
 .cbtn:nth-child(5)>button>div{
-    
+    background-color: rgb(255, 255, 255);
+
 }
