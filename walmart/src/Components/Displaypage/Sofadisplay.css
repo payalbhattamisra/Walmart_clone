@@ -9,6 +9,9 @@
     width: 13%;
     gap: 20px;
 }
+.rescopmo{
+    display: none;
+}
 .pics>img{
     border-radius: 5px;
 }
@@ -122,7 +125,7 @@ margin-bottom: 10px;
     border: none;
 }
 .addbtn>button:nth-child(2){
-    padding: 15px 38px;
+    padding: 13px 12px;
     border-radius: 26px;    
     background-color: #0073C3;
     color: white;
@@ -179,4 +182,124 @@ margin-bottom: 10px;
 .cbtn:nth-child(5)>button>div{
     background-color: rgb(255, 255, 255);
 
+}
+
+@media (max-width: 500px) {
+    .sdisplay{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        gap: 20px;
+    }
+    .rescopmo{
+        display: flex;
+    }
+
+    .dleft{
+        width: 100%;
+        height: 350px;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        padding: 0px;
+    }
+    .dright{
+        width: 100%;
+    }
+    .bekarcomp{
+        display: none;
+    }
+    .stars{
+        display: flex;
+        justify-content: space-between;
+    }
+    .rescopmo:nth-child(2){
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .rescopmo:nth-child(3){
+        font-size: 11px;
+        font-weight: 600;
+        background-color: #E6F1FC;
+        width: 60px;
+        color: #0073C3;
+        text-align: center;
+        border-radius: 6px;
+        margin-bottom: 5px;
+    }
+    .mainimg{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 320px;
+        height: 400px;
+        position: relative;
+        padding: 0px 0px;
+        overflow-y: hidden;
+    }
+    .pics{
+        width: 100%;
+        border-radius: 5px;
+        display: flex;
+        height: 100px;
+        flex-direction: row;
+    }
+    .pics>img{
+        height: 60px;
+        width: 60px;
+    }
+    .mainimg>button:nth-child(2){
+        right: 0px;
+        top: 5px;
+    }
+    .mainimg>button:nth-child(3){
+        right: 0px;
+        top: 50px;
+    }
+    .mainimg>button:nth-child(4){
+        left: 0px;
+    }
+    .mainimg>button:nth-child(5){
+        right: 0px;
+        
+    }
+    .addbtn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        position: fixed;
+        bottom: -40px;
+        left: 0px;
+        background-color: rgb(255, 255, 255);
+        height: 65px;
+        padding: 15px;
+    }
+    .addbtn>p{
+        margin-right: auto;
+        font-weight: 600;
+        font-size: 16px;
+        overflow-y: hidden;
+    }
+    .addbtn>button:nth-child(2){
+        padding: 15px 30px;
+        border-radius: 26px;
+        background-color: #0073C3;
+        color: white;
+        border: none;
+    }
+    .addbtn>button:nth-child(3){
+        padding: 13px 12px;
+        border-radius: 26px;    
+        background-color: #0073C3;
+        color: white;
+        border: none;
+        margin-left: 5px;
+    }
+    .cbtns{
+        display: flex;
+        margin-top: 10px;
+        margin-bottom: 80px;
+        justify-content: space-around;
+    }
 }
