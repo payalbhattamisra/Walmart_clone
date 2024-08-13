@@ -1,10 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "../Navbar/Navbar";
 import Header from "../Navbar/Header";
 import { NavLink } from "react-router-dom";
 import "./Sofadisplay.css";
 
 const Sofadisplay = () => {
+  const images = [
+    "https://i5.walmartimages.com/seo/Homall-Convertible-Sectional-Sofa-Couch-Modern-Linen-Fabric-L-Shaped-Couch-3-Seat-Reversible-Chaise-Small-Living-Room-Apartment-Space-Dark-Gray_580e12a9-825b-4586-87df-e275ea527e67.78b035bcf5754d1e6b0f1aa872ff576a.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF",
+    "https://i5.walmartimages.com/asr/b9efe314-bb73-40cf-8367-d7f13ffc613e.71353f46cc3af39ee2562443eea25d86.jpeg?odnHeight=117&odnWidth=117&odnBg=FFFFFF",
+    "https://i5.walmartimages.com/asr/e38be54a-4965-4132-9983-dfec04af8ac1.76bdb2ff95146de46c870d5937598168.jpeg?odnHeight=117&odnWidth=117&odnBg=FFFFFF",
+    "https://i5.walmartimages.com/asr/8d01c293-30f2-4c98-9f73-5421e4628dd2.16502b6abc7a5315cdf9b3a8f70c4943.jpeg?odnHeight=117&odnWidth=117&odnBg=FFFFFF",
+    "https://i5.walmartimages.com/asr/e30fcc11-d84e-4153-8ea8-ac6f89aa7c2c.d8829c641590ad319c6c4a16e2155db5.jpeg?odnHeight=117&odnWidth=117&odnBg=FFFFFF"
+  ];
+
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  const handlePrevClick = () => {
+    setCurrentImageIndex((prevIndex) =>
+      prevIndex === 0 ? images.length - 1 : prevIndex - 1
+    );
+  };
+
+  const handleNextClick = () => {
+    setCurrentImageIndex((prevIndex) =>
+      prevIndex === images.length - 1 ? 0 : prevIndex + 1
+    );
+  };
+
+  const handleThumbnailClick = (index) => {
+    setCurrentImageIndex(index);
+  };
+
   return (
     <>
       <Header />
@@ -24,31 +50,20 @@ const Sofadisplay = () => {
         <p className="rescopmo">Best seller</p>
         <div className="dleft">
           <div className="pics">
-            <img
-              src="https://i5.walmartimages.com/seo/Homall-Convertible-Sectional-Sofa-Couch-Modern-Linen-Fabric-L-Shaped-Couch-3-Seat-Reversible-Chaise-Small-Living-Room-Apartment-Space-Dark-Gray_580e12a9-825b-4586-87df-e275ea527e67.78b035bcf5754d1e6b0f1aa872ff576a.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF"
-              alt=""
-            />
-            <img
-              src="https://i5.walmartimages.com/asr/b9efe314-bb73-40cf-8367-d7f13ffc613e.71353f46cc3af39ee2562443eea25d86.jpeg?odnHeight=117&odnWidth=117&odnBg=FFFFFF"
-              alt=""
-            />
-            <img
-              src="https://i5.walmartimages.com/asr/e38be54a-4965-4132-9983-dfec04af8ac1.76bdb2ff95146de46c870d5937598168.jpeg?odnHeight=117&odnWidth=117&odnBg=FFFFFF"
-              alt=""
-            />
-            <img
-              src="https://i5.walmartimages.com/asr/8d01c293-30f2-4c98-9f73-5421e4628dd2.16502b6abc7a5315cdf9b3a8f70c4943.jpeg?odnHeight=117&odnWidth=117&odnBg=FFFFFF"
-              alt=""
-            />
-            <img
-              src="https://i5.walmartimages.com/asr/e30fcc11-d84e-4153-8ea8-ac6f89aa7c2c.d8829c641590ad319c6c4a16e2155db5.jpeg?odnHeight=117&odnWidth=117&odnBg=FFFFFF"
-              alt=""
-            />
+            {images.map((image, index) => (
+              <img
+                key={index}
+                src={image}
+                alt={`Thumbnail ${index}`}
+                onClick={() => handleThumbnailClick(index)}
+                className={currentImageIndex === index ? "active" : ""}
+              />
+            ))}
           </div>
           <div className="mainimg">
             <img
-              src="https://i5.walmartimages.com/seo/Homall-Convertible-Sectional-Sofa-Couch-Modern-Linen-Fabric-L-Shaped-Couch-3-Seat-Reversible-Chaise-Small-Living-Room-Apartment-Space-Dark-Gray_580e12a9-825b-4586-87df-e275ea527e67.78b035bcf5754d1e6b0f1aa872ff576a.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF"
-              alt=""
+              src={images[currentImageIndex]}
+              alt="Main Display"
             />
             <button>
               <i className="fa-solid fa-heart"></i>
@@ -56,10 +71,10 @@ const Sofadisplay = () => {
             <button>
               <i className="fa-solid fa-magnifying-glass-plus"></i>
             </button>
-            <button>
+            <button onClick={handlePrevClick}>
               <i className="fa-solid fa-angle-left"></i>
             </button>
-            <button>
+            <button onClick={handleNextClick}>
               <i className="fa-solid fa-angle-right"></i>
             </button>
           </div>
@@ -85,7 +100,7 @@ const Sofadisplay = () => {
             Price when purchased online <button>i</button>
           </p>
           <div className="addbtn">
-          <p>$169.99</p>
+            <p>$169.99</p>
             <button>Add to cart</button>
             <button>
               <i className="fa-solid fa-vr-cardboard"></i>
