@@ -270,37 +270,17 @@ a{
             grid-area: 1 / 1 / 3 / 13;
             background-color: rgb(179, 206, 254);
             overflow-y: hidden;
-            padding: 5px;
+            padding: 0px;
+        
+        
+        
+        }
+        .hompdiv4>img{
+            width: 100%;
+            
         }
         
-        .hompdiv4>h1{
-            font-size: 30px;
-        }
-        .hompdiv4>h2{
-            font-size: 20px;
-        }
-        .hompdiv4>img:nth-child(5){
-            position: absolute;
-            height: 180px;
-            right: 5px;
-            bottom: -10px;
-        }
-        .hompdiv4>img:nth-child(4){
-            height: 80px;
-            margin-left: -100px;
-            margin-bottom: 10px;
-        }
-        .hompdiv4>h2{
-            margin-bottom: 3px;
-        }
-        .hompdiv4>button{
-            border: 0.1px solid black;
-            padding: 7px 17px;
-            border-radius: 50px;
-        }
-        .hompdiv4>button:hover{
-            background-color: #ffffff79;
-        }
+       
         .hompdiv5 {
             grid-area: 3 / 1 / 5 / 13;
             display: flex;

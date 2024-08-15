@@ -28,17 +28,16 @@ const Header = () => {
       <div className="header">
         <button className="hmenubtn"><i className="fa-solid fa-bars"></i></button>
         <div className="logo">
-          <h2>Walmart</h2>
           <img
             className="logoimg"
-            src="https://i5.walmartimages.com/dfw/4ff9c6c9-d10e/k2-_ef2c8660-96ed-4f64-891d-329fa488c482.v1.png"
+            src="./img/logo.png"
             alt="Walmart Logo"
           />
         </div>
         <div className="logo2">
           <img
             className="logoimg"
-            src="https://i5.walmartimages.com/dfw/4ff9c6c9-d10e/k2-_ef2c8660-96ed-4f64-891d-329fa488c482.v1.png"
+            src="./img/logo2.png"
             alt="Walmart Logo"
           />
         </div>
@@ -56,7 +55,7 @@ const Header = () => {
         <form className="search" onSubmit={handleSubmit}>
           <input
             type="text"
-            placeholder="Search at Walmart"
+            placeholder="Search at virtualkart"
             value={searchTerm}
             onChange={handleSearch}
           />

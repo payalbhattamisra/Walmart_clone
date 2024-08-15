@@ -117,14 +117,17 @@ margin-bottom: 10px;
     border-radius: 20px;
     background-color: transparent;
 }
-.addbtn>button:nth-child(1){
+.addbtn>p:nth-child(1){
+    display: none;
+}
+.addbtn>button:nth-child(2){
     padding: 15px 30px;
     border-radius: 26px;
     background-color: #0073C3;
     color: white;
     border: none;
 }
-.addbtn>button:nth-child(2){
+.addbtn>button:nth-child(3){
     padding: 13px 12px;
     border-radius: 26px;    
     background-color: #0073C3;
@@ -275,6 +278,9 @@ margin-bottom: 10px;
         height: 65px;
         padding: 15px;
         overflow-y: hidden;
+    }
+    .addbtn>p:nth-child(1){
+        display: flex;
     }
     .addbtn>p{
         margin-right: auto;

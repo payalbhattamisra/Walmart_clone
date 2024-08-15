@@ -7,6 +7,7 @@
     width: 100%;
     color: white;
     padding: 17px;
+    overflow-y: hidden;
 }
 .hmenubtn{
     display: none;
@@ -19,7 +20,7 @@
     min-width: 155px;
 }
 .logo>img {
-    height: 35px;
+    height: 160px;
 }
 .logo2{
     display: none;
@@ -129,7 +130,7 @@ i{
         min-width: 45px;
     }
     .logo2>img {
-        height: 35px;
+        height: 50px;
     }
     .hmenubtn{
         display: flex;

@@ -31,17 +31,7 @@ const Homepage = () => {
           />
         </div>
         <div className="hompdiv4">
-          <h1>Springs</h1>
-          <h2>Saving</h2>
-          <button>Shop all</button>
-          <img
-            src="https://github.com/B2Kumar03/homepageImage/blob/main/price-removebg-preview.png?raw=true"
-            alt=""
-          />
-          <img
-            src="https://github.com/B2Kumar03/homepageImage/blob/main/samsungTv-removebg-preview.png?raw=true"
-            alt=""
-          />
+          <img src="./img/home.png" alt="" />
         </div>
         <div className="hompdiv5">
           <div className="hompdiv51">

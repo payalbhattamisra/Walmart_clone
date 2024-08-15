@@ -45,7 +45,7 @@ function Product() {
                 <button className="buy-button"
                 onClick={()=>{
                   if (product.id===1){
-                    navigate("/Sofadisplay")
+                    navigate("/")
                   }
                 }}
 
