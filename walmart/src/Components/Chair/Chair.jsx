@@ -2,10 +2,11 @@ import React from 'react';
 import Navbar from '../Navbar/Navbar';
 import Header from '../Navbar/Header';
 import './Chair.css';
-import { NavLink } from 'react-router-dom';
+import { NavLink,useNavigate } from 'react-router-dom';
+
 
 const products = [
-  { id: 1, name: "BestOffice Mesh Chair, Ergonomic Adjustable, Back Support, Rolling Swivel, Black for Women & Men.", image: "https://i5.walmartimages.com/seo/BestOffice-Mesh-Office-Chair-Desk-Computer-Ergonomic-Adjustable-Stool-Back-Support-Modern-Executive-Rolling-Swivel-Women-Men-Black_7e32d25a-f1ee-4268-bda6-cc50c9d17d28.f656b99619207dd1356a2d8b769babd5.jpeg?odnHeight=640&odnWidth=640&odnBg=FFFFFF", price: "$39.99", reviews: "⭐⭐⭐⭐☆ (4.5)" },
+  { id: 1, name: "BestOffice Mesh Chair, Ergonomic Adjustable, Back Support, Rolling Swivel, Black for Women & Men.", image: "https://cdnb.artstation.com/p/assets/images/images/049/742/253/smaller_square/athul-bhagyesh-01.jpg?1653227522", price: "$39.99", reviews: "⭐⭐⭐⭐☆ (4.5)" },
   { id: 2, name: "Better Homes & Gardens Barrel Accent Chair, Gray Linen.", image: "https://i5.walmartimages.com/seo/Better-Homes-Gardens-Barrel-Accent-Chair-Gray-Linen-Fabric-Upholstery-Adult_f01e26c6-6e51-47a7-8bf9-a3009614b465.e5007498d253cbdedfa51de0365c5f92.jpeg?odnHeight=640&odnWidth=640&odnBg=FFFFFF", price: "$98.99", reviews: "⭐⭐⭐⭐☆ (4.0)" },
   { id: 3, name: "GTRACING GTWD-200 Gaming Chair with Footrest, Height Adjustable Office Swivel Reclining, White", image: "https://i5.walmartimages.com/seo/GTRACING-GTWD-200-Gaming-Chair-with-Footrest-Height-Adjustable-Office-Swivel-Reclining-White_43754c7c-2af5-46c4-8230-d7d14bc7d8b1.20bd7f61d36b5fb9177e86ae804c8b00.jpeg?odnHeight=640&odnWidth=640&odnBg=FFFFFF", price: "$126.99", reviews: "⭐⭐⭐⭐☆ (4.8)" },
   { id: 4, name: "Canvas Kids' Bean Bag Chair Strut Green - ™", image: "https://i5.walmartimages.com/seo/Canvas-Kids-Bean-Bag-Chair-Strut-Green_e88c6331-f471-45db-b206-1db4dec88255.2f41e86679481726a6acb11aebc76316.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF", price: "$65.95", reviews: "⭐⭐⭐⭐☆ (4.6)" },
@@ -17,6 +18,8 @@ const products = [
   { id: 10, name: "Bme 360 Swivel Comfy Papasan Chair with Fabric Cushion, Metal Frame, Black Cushion - Black Base", image: "https://i5.walmartimages.com/seo/Bme-Papasan-Chair-Soft-Thick-Density-Fabric-Cushion-Steel-Frame-with-360-Degree-Swivel-Black_38bb9c45-2c6e-4bb3-bb6f-1e318e429803.c2d832e3e02e9b4c033e2582e18ef204.png?odnHeight=640&odnWidth=640&odnBg=FFFFFF", price: "$155.32", reviews: "⭐⭐⭐⭐☆ (4.2)" },
 ];
 function Chair() {
+  const navigate = useNavigate();
+
   return (
     <>
       <div className="product">
@@ -38,7 +41,17 @@ function Chair() {
                 <div className="price-section">
                   <h2>{product.price}</h2>
                 </div>
-                <button className="buy-button">Buy Now</button>
+                <button className="buy-button"
+                onClick={()=>{
+                  if (product.id===1){
+                    navigate("/Sofadisplay")
+                  }
+                }}
+
+                // onClick={() => {
+                //   navigate(`/Sofadisplay/${product.id}`); // navigate to a route with the product ID
+                // }}
+                >Buy Now</button>
                 <div className="reviews">
                   <span>{product.reviews}</span>
                 </div>

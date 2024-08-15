@@ -3,14 +3,16 @@ import Navbar from "../Navbar/Navbar";
 import Header from "../Navbar/Header";
 import { NavLink } from "react-router-dom";
 import "./Sofadisplay.css";
+import { Canvas } from "@react-three/fiber";
+import { Experience } from "./Experience"; // Adjust the import path as necessary
 
 const Sofadisplay = () => {
   const images = [
-    "https://i5.walmartimages.com/seo/Homall-Convertible-Sectional-Sofa-Couch-Modern-Linen-Fabric-L-Shaped-Couch-3-Seat-Reversible-Chaise-Small-Living-Room-Apartment-Space-Dark-Gray_580e12a9-825b-4586-87df-e275ea527e67.78b035bcf5754d1e6b0f1aa872ff576a.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF",
-    "https://i5.walmartimages.com/asr/b9efe314-bb73-40cf-8367-d7f13ffc613e.71353f46cc3af39ee2562443eea25d86.jpeg?odnHeight=117&odnWidth=117&odnBg=FFFFFF",
-    "https://i5.walmartimages.com/asr/e38be54a-4965-4132-9983-dfec04af8ac1.76bdb2ff95146de46c870d5937598168.jpeg?odnHeight=117&odnWidth=117&odnBg=FFFFFF",
-    "https://i5.walmartimages.com/asr/8d01c293-30f2-4c98-9f73-5421e4628dd2.16502b6abc7a5315cdf9b3a8f70c4943.jpeg?odnHeight=117&odnWidth=117&odnBg=FFFFFF",
-    "https://i5.walmartimages.com/asr/e30fcc11-d84e-4153-8ea8-ac6f89aa7c2c.d8829c641590ad319c6c4a16e2155db5.jpeg?odnHeight=117&odnWidth=117&odnBg=FFFFFF"
+    "./img/ch1.jpg",
+    "./img/ch2.png",
+    "https://i.downloadatoz.com/app_img/20220615/82/51/56/1655264263.jpg",
+    "./img/ch3.png",
+    "https://i5.walmartimages.com/asr/e30fcc11-d84e-4153-8ea8-ac6f89aa7c2c.d8829c641590ad319c6c4a16e2155db5.jpeg?odnHeight=117&odnWidth=117&odnBg=FFFFFF",
   ];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -43,9 +45,8 @@ const Sofadisplay = () => {
           </p>
         </div>
         <h2 className="rescopmo">
-          Homall Convertible Sectional Sofa Couch, Modern Linen Fabric L-Shaped
-          Couch 3-Seat Sofa Sectional with Reversible Chaise for Small Living
-          Room, Apartment and Small Space, Dark Gray
+          BestOffice Mesh Chair, Ergonomic Adjustable, Back Support, Rolling
+          Swivel, Black for Women & Men.
         </h2>
         <p className="rescopmo">Best seller</p>
         <div className="dleft">
@@ -61,10 +62,14 @@ const Sofadisplay = () => {
             ))}
           </div>
           <div className="mainimg">
-            <img
-              src={images[currentImageIndex]}
-              alt="Main Display"
-            />
+            {currentImageIndex === 2 ? (
+              <Canvas shadows camera={{ position: [0, 0, 5], fov: 30 }}>
+                <color attach="background" args={["#232323"]} />
+                <Experience />
+              </Canvas>
+            ) : (
+              <img src={images[currentImageIndex]} alt="Main Display" />
+            )}
             <button>
               <i className="fa-solid fa-heart"></i>
             </button>
@@ -83,9 +88,8 @@ const Sofadisplay = () => {
           <p className="bekarcomp"> Best seller</p>
           <NavLink className="bekarcomp">Homall</NavLink>
           <h2 className="bekarcomp">
-            Homall Convertible Sectional Sofa Couch, Modern Linen Fabric
-            L-Shaped Couch 3-Seat Sofa Sectional with Reversible Chaise for
-            Small Living Room, Apartment and Small Space, Dark Gray
+            BestOffice Mesh Chair, Ergonomic Adjustable, Back Support, Rolling
+            Swivel, Black for Women & Men.
           </h2>
 
           <p className="bekarcomp">
